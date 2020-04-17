@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Singh Security Services Calgary App
+      Singh Security Services Calgary App updated
     </div>
   );
 }
