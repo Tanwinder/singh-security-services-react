@@ -1,0 +1,117 @@
+@import '~scss/vars';
+@import '~scss/mixins';
+.common {
+    background: #333;
+    display: block;
+    height: 3px;
+    position: absolute;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    width: 32px;
+    cursor: pointer;
+}
+.navbar-mobile {
+    @include flex(flex,space-around,row);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px $green;
+    &:hover {
+        color: $green;
+    }
+}
+.phone {
+    font-family: Patua One, Arial, Tahoma, sans-serif;
+    flex-basis: 45%;
+    text-align: center;
+    & .phone-link {
+        background-color: $green;
+        font-size: 2em;
+        text-align: center;
+        font-weight: 400;
+        border-radius: 4px;
+        padding: .1em .5em;
+        font-family: serif;
+        @extend .shadow;
+        color: $black;
+        &:hover {
+            background-color: $app-color;
+            color: $white;
+        }
+    }
+}
+.menu {
+    transition: max-height .2s linear;
+    @include flex(flex,space-around,column);
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: $white;
+    app-nav {
+        font-size: 2em;
+        margin: .2em 4vw;
+        border-bottom: 2px solid $light-gray;
+        cursor: pointer;
+        padding: .5em;
+        
+    }
+    
+}
+.menu-icon {
+    width: 45px;
+    height: 45px;
+    border: 1px solid $gray;
+    @extend .shadow;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    .navicon {
+        @extend .common;
+        top: 0;
+        margin: 22px 6px;
+        line-height: 45px;
+        &:before {
+            @extend .common;
+            content: '';
+            top: -8px;
+        }
+        &:after {
+            @extend .common;
+            content: '';
+            top: 8px;
+        }
+    }
+}
+.menu-btn {
+    display: none;
+    &:checked {
+        & ~ .menu-icon {
+            .navicon {
+                margin: 21px 4px;
+                background: transparent;
+                &::before {
+                    transform: rotate(-45deg);
+                    transform-origin: 27px;
+                }
+                &::after {
+                    transform: rotate(45deg);
+                    transform-origin: 27px;
+                }
+            }
+        }
+        & ~ .menu {
+            transition: max-height .3s linear;
+            max-height:320px;
+        }
+    }
+}

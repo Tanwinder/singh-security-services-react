@@ -1,0 +1,26 @@
+@import '~scss/vars';
+@import '~scss/mixins';
+
+.background-image {
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    z-index: -1;
+    
+    div {
+        color: $white;
+        background-color: rgba(0,0,0,0.5);
+        padding: 35vh 0;
+        h1 {
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+        h2 {
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@mixin flex($display,$justify, $direction){
+    display: $display;
+    justify-content: $justify;
+    flex-direction: $direction;
+    // border: 1px solid gray;
+}
+.shadow {
+    box-shadow: 2px 2px 2px 2px gray;
+}

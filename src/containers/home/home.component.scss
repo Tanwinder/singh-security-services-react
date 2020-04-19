@@ -1,0 +1,10 @@
+@import '~scss/vars';
+@import '~scss/mixins';
+
+.home {
+    @include flex(flex,center,row);
+    flex-wrap: wrap;
+    app-image-content {
+        box-sizing: border-box;
+    }
+}

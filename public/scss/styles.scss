@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import './normalize';
+@import './vars';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    color: $app-color;
+    background-color: $white;
+    font-size: 12px;
+    // font-family: Roboto,Arial,Tahoma,sans-serif;
+    font-family: 'Open Sans',sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    outline: none;
+}
+app-nav:last-of-type {
+    & .nav {
+        & span {
+            border: none!important;
+        }
+    }
+}
+
+@media only screen and (min-width: 925px) {
+    body {
+        font-size: 14px;
+    }
+} 
+@media only screen and (min-width: 1225px) {
+    body {
+        font-size: 16px;
+    }
+}

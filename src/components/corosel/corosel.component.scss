@@ -1,0 +1,48 @@
+@import '~scss/vars';
+@import '~scss/mixins';
+
+.corosel {
+    background-image: url(https://cdn.wideinfo.org/wp-content/uploads/2017/08/home-carbon-monxide-today-160906-tease_c5eeae8c7b5c1262b693a175f769fbbf-3.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    margin: -20px 0 0 0;
+    padding: 18em 0 10em;
+    color: $app-color;
+    line-height: 1.2em;
+    h1 {
+        font-size: 2.8em;
+        font-size: 2.8em;
+        font-weight: 400;
+        word-break: break-word;
+        white-space: nowrap;
+    }
+    h2 {
+        font-size: 3em;
+        font-weight: 400;
+    }
+    button {
+        padding: .7em 2em;
+        border-radius: 10px;
+        font-size: 1.5em;
+        outline: none;
+        background-color: $white;
+        color: $app-color;
+        margin-left: 1em;
+        border: none;
+        &:hover {
+            color: $white;
+            background-color: $app-color;
+            transition: all 0.2s linear;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .corosel {
+        h1 {
+            font-size: 4em;
+        }
+    }    
+}

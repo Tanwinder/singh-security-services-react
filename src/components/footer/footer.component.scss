@@ -1,0 +1,49 @@
+@import '~scss/vars';
+@import '~scss/mixins';
+
+.footer {
+    font-size: 24px;
+    @include flex(flex,space-around,row);
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $white;
+    flex-wrap: wrap;
+    & > div {
+        flex-basis: 90%;
+        padding: 20px 10px;
+        color: $black;
+        h3 {
+            border-bottom: 1px solid $gray;
+            color: $app-color;
+        }
+        
+    }
+}
+.footer-address {
+    p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    span {
+        font-weight: bold;
+        color: $app-color;
+        font-family: initial;
+    }
+}
+.footer-navbar {
+    color: $app-color;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        padding-left:7vw;
+        padding-right: 7vw;
+        & > div {
+            flex-basis: 28%;
+        }
+        .footer-address {
+            flex-basis: 33%;
+            padding-left:0; 
+        }
+    }
+}

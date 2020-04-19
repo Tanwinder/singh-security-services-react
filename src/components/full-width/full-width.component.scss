@@ -1,0 +1,29 @@
+@import '~scss/vars';
+@import '~scss/mixins';
+
+.fullwidth {
+    padding: 2.2em 2em;
+    background-color: $white;
+    color: #010e1b;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    h1{
+        font-size: 3em;
+        font-weight: 400;
+        margin: 0;
+    }
+    p{
+        font-size: 1.2em;
+        margin: .8em 0;
+    }
+    &.full {
+        text-align: center;
+        background-color: $light-gray;
+        width: 90%;
+        margin: 2em auto;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
