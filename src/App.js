@@ -1,13 +1,16 @@
 import React from 'react';
-// import logo from './logo.svg';
-import { BrowserRouter } from 'react-router-dom'
+import Header from './components/header'
+import RouteContainer from './components/RouteContainer'
+import Footer from './components/footer'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      Singh Security Services Calgary App updated
-    </div>
+    <React.Fragment>
+      <Header />
+      <RouteContainer />
+      <Footer />
+    </React.Fragment>
   );
 }
 

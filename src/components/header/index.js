@@ -1,10 +1,11 @@
 import React from 'react';
-import AppNavbar from ''
+import Navbar from '../navbar/navbar'
+import './header.scss'
 
 const Header = () => {
   return(
-    <div class="header">
-      <AppNavbar />
+    <div className="header">
+      <Navbar />
       {/* <app-mobile-navbar></app-mobile-navbar> */}
     </div>
   )

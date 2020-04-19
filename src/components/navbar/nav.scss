@@ -1,6 +1,5 @@
-@import '~scss/vars';
-@import '~scss/mixins';
-
+@import '../../scss/_vars.scss';
+@import '../../scss/_mixins.scss';
 .nav {
     font-weight: 400;
     font-size: 1.2em;
@@ -50,6 +49,11 @@
             &::before {
                 left: 0;
             }
+        }
+    }
+    &:last-child {
+        span {
+            border-right: none;
         }
     }
 }

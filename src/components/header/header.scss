@@ -1,5 +1,7 @@
-@import '~scss/vars';
-@import '~scss/mixins';
+// @import '~scss/vars';
+// @import '~scss/mixins';
+@import '../../scss/_vars.scss';
+@import '../../scss/_mixins.scss';
 
 .header {
     position: sticky;
@@ -10,7 +12,7 @@
     box-shadow: 2px 2px 2px $light-gray;
     z-index: 10000;
     font-size: 10px;
-    app-navbar {
+    .app-navbar {
         display: none;
     }
 }
@@ -18,10 +20,10 @@
 @media only screen and (min-width: 1024px) {
     .header {
         font-size: 14px;
-        app-mobile-navbar {
+        .app-mobile-navbar {
             display: none;
         }
-        app-navbar {
+        .app-navbar {
             display: flex;
             height: 100%;
         }

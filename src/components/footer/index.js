@@ -1,4 +1,12 @@
-<div class="footer">
+import React from 'react'
+import PropTypes from 'prop-types'
+// import './footer.scss'
+
+const Footer = props => {
+  return (
+    <div>
+      Footer
+      {/* <div class="footer">
   <div class="footer-address">
     <h3>Contact Us</h3>
     <p><span>Singh Security Services</span><br>
@@ -15,4 +23,14 @@
     <h3>About</h3>
     <p>We specialize in security, monitoring and automation services for Calgary and North Alberta. Our products and services cater to both residential and commercial needs. Plus, we are there for you when you need support and troubleshooting.</p>
   </div>
-</div>
+</div> */}
+    </div>
+  )
+}
+
+Footer.propTypes = {
+
+}
+
+export default Footer
+
