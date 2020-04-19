@@ -84,6 +84,7 @@
 @media only screen and (min-width: 768px) {
     .image-double {
         width: 42vw;
-        margin: 1em;
+        // margin: 1em;
+        flex-basis: 48%;
     }
 }

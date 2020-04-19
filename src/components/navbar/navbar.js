@@ -1,9 +1,7 @@
 import React from 'react'
-import {Nav} from './navs'
-import NavLinks from './NavLinks'
+import NavLinks from '../navlinks/NavLinks'
 import { NavLink } from 'react-router-dom'
 import logoImage from '../../assetfiles/images/singhsecuritylogo1.png'
-import './nav.scss'
 import './navbar.scss'
 
 const Navbar = () => {
@@ -16,12 +14,7 @@ const Navbar = () => {
           </div>
         </NavLink>
       </div>
-      <div className="navbar-navs">
-        {
-          Nav && Nav.map( ac => <NavLinks key={ac.id} item={ac} />)
-        }
-          {/* <app-nav *ngFor="let nav of navs" [navclassName]="nav.navclassName" [name]="nav.name" [routerlink]="nav.routerlink"></app-nav> */}
-      </div>
+      <NavLinks />
       <div className="phone">
         <div className="phone-content">Call Now for a FREE QUOTE!</div>
         <a href="tel:+1403-992-7629" className="phone-link"><span className="phone-number">403-992-7629</span></a>
