@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Commercial from '../containers/commercial/Commercial'
 import Resdential from '../containers/residential/Residential'
 import Services from '../containers/security-services/Services'
@@ -14,7 +14,8 @@ const RouteContainer = props => {
             <Route path="/residential" render={() => <Resdential />} />
             <Route path="/services" render={() => <Services />} />
             <Route path="/about" render={() => <About />} />
-            <Route path="/" render={() => <Home />} />
+            <Route path="/Home" render={() => <Home />} />
+            <Redirect to="/" />
         </Switch>
     )
 }
