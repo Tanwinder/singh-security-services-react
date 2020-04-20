@@ -1,8 +1,10 @@
 @import '../../scss/_vars.scss';
 @import '../../scss/_mixins.scss';
+// @import '../../assetfiles//images/home-screen-image.jpg'
 
 .corosel {
-    background-image: url(https://cdn.wideinfo.org/wp-content/uploads/2017/08/home-carbon-monxide-today-160906-tease_c5eeae8c7b5c1262b693a175f769fbbf-3.jpg);
+    // background-image: url(https://cdn.wideinfo.org/wp-content/uploads/2017/08/home-carbon-monxide-today-160906-tease_c5eeae8c7b5c1262b693a175f769fbbf-3.jpg);
+    background-image: url('../../assetfiles/images/home-real-estate.jpg');
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;

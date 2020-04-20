@@ -1,3 +1,4 @@
+// import img from '../assetfiles/images/home-screen-image.jpg';
 export const mainheading = {
     classvalue: 'fullwidth full',
     heading: 'Singh Security Services',
@@ -7,7 +8,8 @@ export const mainheading = {
 export const imagecontent = [
     {
       header: 'Home Security',
-      imagesrc: 'http://securitycompanies.co/wp-content/uploads/2017/08/Best-and-Most-Affordable-Home-Security-System-in-2017.jpg',
+    //   imagesrc: 'http://securitycompanies.co/wp-content/uploads/2017/08/Best-and-Most-Affordable-Home-Security-System-in-2017.jpg',
+    imagesrc: '../assetfiles/images/home-real-estate.jpg',
       paragraph: 'Protect your home and family with our advanced home security monitoring systems.',
       imageclass: 'image-double'
     },
@@ -25,19 +27,19 @@ export const imagecontent = [
     },
     {
       header: 'Burglary Alarm Systems',
-      imagesrc: 'http://mce-engineering.com/wp-content/uploads/2017/02/NEC-VoIP-Phone-Systems1.jpg',
+      imagesrc: 'https://mce-engineering.com/wp-content/uploads/2017/02/NEC-VoIP-Phone-Systems1.jpg',
       paragraph: 'Interactive Alarm Systems with remote mobile access and full notifications',
       imageclass: 'image-double'
     },
     {
       header: 'Fire, Smoke & Heat',
-      imagesrc: 'http://www.safetysolutions.in/images/smoke.jpg',
+      imagesrc: 'https://www.safetysolutions.in/images/smoke.jpg',
       paragraph: 'When every second counts, sensors throughout your home instantly alert our monitoring centers in the event of a fire or gas leak.',
       imageclass: 'image-double last'
     },
     {
       header: 'Structured Cabling',
-      imagesrc: 'http://www.pci-fla.com/technology-services/structured-cabling/structured-cabling.png',
+      imagesrc: 'https://www.pci-fla.com/technology-services/structured-cabling/structured-cabling.png',
       paragraph: 'Structured Cabling is the core element of the corporate network',
       imageclass: 'image-double'
     },
