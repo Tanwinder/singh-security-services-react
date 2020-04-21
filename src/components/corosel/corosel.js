@@ -5,14 +5,14 @@ import './corosel.scss'
 
 const Corosel = props => {
   return (
-    <div class="corosel">
+    <div className="corosel">
       <h1>Singh Security Services</h1>
       <h2>serving Calgary</h2>
       <button>
-          <NavLink class="nav" to="/commercial" activeClassName="active"><span>Commercial</span></NavLink>
+          <NavLink className="nav" to="/commercial" activeClassName="active"><span>Commercial</span></NavLink>
       </button>
       <button>
-        <NavLink class="nav" to="/residential" activeClassName="active"><span>Residential</span></NavLink>
+        <NavLink className="nav" to="/residential" activeClassName="active"><span>Residential</span></NavLink>
       </button>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import NavLinks from '../navlinks/NavLinks'
 import { NavLink } from 'react-router-dom'
-import logoImage from '../../assetfiles/images/singhsecuritylogo1.png'
+import logoImage from '../../assetfiles/images/logo11.png'
 import './navbar.scss'
 
 const Navbar = () => {
@@ -10,7 +10,8 @@ const Navbar = () => {
       <div className="logo">
         <NavLink to="/" >
           <div className="imagelogo">
-          <img src={logoImage} alt="Singh Security" className="imagelogo__inner" />  
+          <img src={logoImage} alt="Singh Security" className="imagelogo__inner" style={{width: "100%", height: "104px"}} /> 
+          {/* <div className="logotext"> Singh Security<br /> <span>Services</span></div>  */}
           </div>
         </NavLink>
       </div>

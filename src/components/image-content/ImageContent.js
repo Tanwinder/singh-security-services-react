@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './image-content.scss'
+// import imagesrc1 from '../../assetfiles/images/fire-alarms.jpg'
 
 const ImageContent = ({item}) => {
   const { imageclass, imagesrc, header, paragraph } = item;

@@ -11,8 +11,8 @@ export const Nav = [
     },
     {
         id: 3,
-        desc: 'Resdential',
-        path: 'resdential'
+        desc: 'Residential',
+        path: 'residential'
     },
     {
         id: 4,
