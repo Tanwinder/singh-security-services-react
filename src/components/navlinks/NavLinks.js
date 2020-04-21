@@ -6,9 +6,23 @@ import './nav.scss'
 
 const NavLinks = ({orderStyle}) => {
     return (
-        <div className= {orderStyle === "vertical" ? "navbar-navs__footer" : "navbar-navs"}>
+        <div className= {orderStyle === "vertical" ? "navbar-navs__footer" : orderStyle === "phone" ? "menu" : "navbar-navs"}>
         {
           Nav && Nav.map( item => {
+              if( orderStyle === "phone" ) {
+                return (
+                  <div className="mobile_nav">
+                    <NavLink
+                      className={orderStyle === "vertical" ? "footer-nav" : orderStyle === "phone" ? "mobile_nav__anchor" : "nav"} 
+                      key={item.id} 
+                      to={`${item.path}`} 
+                      activeClassName="active"
+                      >
+                          <span>{item.desc}</span>
+                      </NavLink>
+                  </div>
+                )
+              }
               return (
                 <NavLink
                 className={orderStyle === "vertical" ? "footer-nav" : "nav"} 

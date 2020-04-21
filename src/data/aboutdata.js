@@ -5,16 +5,14 @@ import history from '../assetfiles/images/history.png';
 import today from '../assetfiles/images/today.png';
 
 export const arrData= {
-    image: about,
-    content: {
-      title: 'ABOUT US | YOUR LOCAL HOME AND BUSINESS SECURITY FIRM IN CALGARY',
-      description: '',
-      fontsize: '2.7em',
-      width: '60vw',
-      divheight: '88'   //send only number like 80 ,30 etc dont punt % or vh
-    }
+    imageurl: about,
+    title: 'ABOUT US | YOUR LOCAL HOME AND BUSINESS SECURITY FIRM IN CALGARY',
+    description: '',
+    fontsize: '2.7em',
+    titleWidth: '60vw',
+    divheight: '88'   //send only number like 80 ,30 etc dont punt % or vh
   }
-  export const fourColumnContent = [
+export const fourColumnContent = [
     {
     imagesrc: aboutsymbol1,
       title: 'About',

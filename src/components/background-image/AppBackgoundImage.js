@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import './AppBackgoundImage.scss'
 
 const AppBackgoundImage = ({item: {imageurl, divheight, fontsize, titleWidth, title, description} = {}}) => {
+    console.log("jhavahdkajhdad", imageurl)
     const heightValue = (val, dividend)=> {
         let value = Number(val);
         return value/dividend+ 'vh';
@@ -11,7 +12,7 @@ const AppBackgoundImage = ({item: {imageurl, divheight, fontsize, titleWidth, ti
         <div 
             className="background-image"
             style={{
-                backgroundImage: imageurl,
+                backgroundImage: `url(${imageurl})`,
                 height: heightValue(divheight,1),
                 backgroundRepeat: 'no-repeat',
             }}

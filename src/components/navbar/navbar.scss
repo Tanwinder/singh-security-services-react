@@ -8,80 +8,80 @@
     align-items: center;
     position: relative;
     // padding: 0 4%;
-}
-.imagelogo {
-    width: 120px;
-    height: 79px;
-    position: relative;
-    display: flex;
-    // &__inner {
-    //     width: 118px;
-    //     height: 104px;    
-    // }
-}
-// .logo {
-//     font-size: 2.5em;
-//     font-family: cursive;
-//     font-weight: bold;
-//     cursor: pointer;
-//     text-shadow: 2px 2px 2px $green;
-//     &:hover {
-//         color: $green;
-//         text-shadow: 2px 2px 2px $app-color;
-//     }
-// }
-.phone {
-    @include flex(flex,space-around,column);
-    font-family: Patua One, Arial, Tahoma, sans-serif;
-    flex-basis: 21vw;
-    text-align: center;
-    & .phone-content {
-        color: $black;
-        font-weight: bold;
-        font-size: 1.2em;
-        // font-family: "Trebuchet MS", Helvetica, sans-serif;
-        word-spacing: -2px;
-        // text-shadow: 1px 1px $black;
+    .imagelogo {
+        width: 120px;
+        height: 79px;
+        position: relative;
+        display: flex;
+        // &__inner {
+        //     width: 118px;
+        //     height: 104px;    
+        // }
     }
-    & .phone-link {
-        background-color: $green;
-        font-size: 2em;
+    // .logo {
+    //     font-size: 2.5em;
+    //     font-family: cursive;
+    //     font-weight: bold;
+    //     cursor: pointer;
+    //     text-shadow: 2px 2px 2px $green;
+    //     &:hover {
+    //         color: $green;
+    //         text-shadow: 2px 2px 2px $app-color;
+    //     }
+    // }
+    .phone {
+        @include flex(flex,space-around,column);
+        font-family: Patua One, Arial, Tahoma, sans-serif;
+        flex-basis: 21vw;
         text-align: center;
-        font-weight: 400;
-        border-radius: 4px;
-        margin-top: 5px;
-        font-family: serif;
-        @extend .shadow;
-        color: $black;
-        &:hover {
-            background-color: $app-color;
-            color: $white;
+        & .phone-content {
+            color: $black;
+            font-weight: bold;
+            font-size: 1.2em;
+            // font-family: "Trebuchet MS", Helvetica, sans-serif;
+            word-spacing: -2px;
+            // text-shadow: 1px 1px $black;
+        }
+        & .phone-link {
+            background-color: $green;
+            font-size: 2em;
+            text-align: center;
+            font-weight: 400;
+            border-radius: 4px;
+            margin-top: 5px;
+            font-family: serif;
+            @extend .shadow;
+            color: $black;
+            &:hover {
+                background-color: $app-color;
+                color: $white;
+            }
         }
     }
-}
-.navbar-navs {
-    @include flex(flex,center,row);
-    flex-basis: 48vw;
-    height: 100%;
-    align-items: center;
-    position: relative;
-    // flex: 1;
-}
-.logotext {
-    position: absolute;
-    top: 20px;
-    white-space: nowrap;
-    background: white;
-    left: 86px;
-    // text-align: center;
-    align-self: center;
-    color: rgb(38,55,103);
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    text-shadow: 2px 2px 2px #a1ed08;
-    & span {
-        padding-left: 10px;
+    .navbar-navs {
+        @include flex(flex,center,row);
+        flex-basis: 48vw;
+        height: 100%;
+        align-items: center;
+        position: relative;
+        // flex: 1;
+    }
+    .logotext {
+        position: absolute;
+        top: 20px;
+        white-space: nowrap;
+        background: white;
+        left: 86px;
+        // text-align: center;
+        align-self: center;
+        color: rgb(38,55,103);
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        text-shadow: 2px 2px 2px #a1ed08;
+        & span {
+            padding-left: 10px;
+        }
     }
 }

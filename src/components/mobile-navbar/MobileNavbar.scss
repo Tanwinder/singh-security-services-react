@@ -16,6 +16,12 @@
     width: 100%;
     align-items: center;
     position: relative;
+    .logo {
+        width: 83px;
+        height: 79px;
+        position: relative;
+        display: flex;
+    }
 }
 .logo {
     font-size: 2em;
@@ -56,13 +62,18 @@
     max-height: 0;
     overflow: hidden;
     background-color: $white;
-    app-nav {
+    .mobile_nav {
         font-size: 2em;
         margin: .2em 4vw;
         border-bottom: 2px solid $light-gray;
         cursor: pointer;
         padding: .5em;
-        
+        a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            display: block;
+        }
     }
     
 }
