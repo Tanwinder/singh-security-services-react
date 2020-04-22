@@ -3,12 +3,15 @@ import PropTypes from 'prop-types'
 import { resfullwidthdata, imagedata} from '../../data/residentialdata'
 import FullWidth from '../../components/full-width/FullWidth'
 import ImageContent from '../../components/image-content/ImageContent'
+import imgPNG from '../../assetfiles/images/smarthome11.png'
 
 import './residential.scss'
+import Img from 'react-cool-img'
 
 const Residential = props => {
   return (
     <div className="residential">
+      <img src={imgPNG} alt="" className="residential__fullwidth" />
       <FullWidth item={resfullwidthdata} />
       <div>
         {
