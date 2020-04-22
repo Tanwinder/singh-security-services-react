@@ -14,8 +14,8 @@ const RouteContainer = props => {
             <Route path="/residential" render={() => <Resdential />} />
             <Route path="/services" render={() => <Services />} />
             <Route path="/about" render={() => <About />} />
-            <Route path="/Home" render={() => <Home />} />
-            <Redirect to="/" />
+            <Route path="/home" render={() => <Home />} />
+            <Redirect to="/home" />
         </Switch>
     )
 }
