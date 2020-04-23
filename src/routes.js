@@ -6,7 +6,7 @@ const Routes = () => {
     return (
         <Switch>
             <Route path="/notauthorized" render={ () => <div> not authorized</div>} />
-            <Route path="/" render={ () => <App/>} /> 
+            <Route path="*" render={ () => <App/>} /> 
         </Switch>
     )
 }
